@@ -17,14 +17,19 @@ namespace secretmessage_winforms
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Clicking the show button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnShow_Click(object sender, EventArgs e)
         {
-            if (btnShow.Text == "SHOW HIDDEN MESSAGE")
+            if (btnShow.Text == "SHOW HIDDEN MESSAGE") // show button
             {
                 lblMessage.Text = "hehe.";
                 btnShow.Text = "HIDE HIDDEN MESSAGE";
             }
-            else
+            else // hide button
             {
                 lblMessage.ResetText();
                 btnShow.Text = "SHOW HIDDEN MESSAGE";
